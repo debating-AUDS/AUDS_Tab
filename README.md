@@ -68,6 +68,3 @@ Workers free: 100,000 requests/day. D1 free: 5 GB, 5 million row reads/day. A to
 
 ## Project layout
 `src/` Worker (API + draw/scoring engine in `src/engine`), `migrations/` database schema, `public/` the website (plain HTML/CSS/JS, no build step), `test/` tests and the demo server.
-
-## Honest caveats
-This was built and tested in a sandbox where Wrangler and Cloudflare could not be reached, so it has been exercised against an in-memory SQLite stand-in for D1 and in a headless browser, but **not** yet on real Cloudflare. If `wrangler deploy` complains, the most likely culprits are the `database_id` or a Wrangler version difference. One assumption: the old form's "Feedback #" is treated as the round number.
