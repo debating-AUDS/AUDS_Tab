@@ -13,7 +13,7 @@
     {
       "binding": "DB",
       "database_name": "auds-leaderboard",
-      "database_id": "PASTE-YOUR-DATABASE-ID-HERE",
+      "database_id": "a63aec4b-eb5e-4cde-9cbd-2cd5a1a44919",
       "migrations_dir": "migrations"
     }
   ],
