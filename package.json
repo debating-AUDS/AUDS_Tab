@@ -1,0 +1,18 @@
+{
+  "name": "auds-leaderboard",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "types": "wrangler types",
+    "db:migrate:local": "wrangler d1 migrations apply DB --local",
+    "db:migrate": "wrangler d1 migrations apply DB --remote",
+    "test": "node --disable-warning=ExperimentalWarning test/engine.test.ts && node --disable-warning=ExperimentalWarning test/api.test.ts",
+    "demo": "node --disable-warning=ExperimentalWarning test/devserver.ts --seed --port 8787"
+  },
+  "devDependencies": {
+    "wrangler": "^4",
+    "@cloudflare/workers-types": "^4"
+  }
+}
